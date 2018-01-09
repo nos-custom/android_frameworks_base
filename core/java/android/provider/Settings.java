@@ -4762,6 +4762,11 @@ public final class Settings {
         private static final Validator SMART_PIXELS_ON_POWER_SAVE_VALIDATOR =
                 BOOLEAN_VALIDATOR;
 
+	/** Unlock keystore with fingerprint after reboot
+         * @hide
+         */
+        public static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+
         /**
          * Boolean value whether to link ringtone and notification volume
          *
