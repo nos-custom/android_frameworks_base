@@ -6435,6 +6435,6 @@ message MetricsEvent {
     // END OF AOSP CONSTANTS
 
     // NitrogenSettings constant
-    NITROGEN_SETTINGS = 1500;
+    NITROGEN_SETTINGS = 9999;
   }
 }
