@@ -4762,10 +4762,18 @@ public final class Settings {
         private static final Validator SMART_PIXELS_ON_POWER_SAVE_VALIDATOR =
                 BOOLEAN_VALIDATOR;
 
-	/** Unlock keystore with fingerprint after reboot
+        /** Unlock keystore with fingerprint after reboot
          * @hide
          */
         public static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+
+        /**
+         * Boolean value whether to link ringtone and notification volume
+         *
+         * @hide
+         */
+        public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
+
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -5076,6 +5084,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(SMART_PIXELS_SHIFT_TIMEOUT);
             PRIVATE_SETTINGS.add(SMART_PIXELS_ON_POWER_SAVE);
             PRIVATE_SETTINGS.add(ACCELEROMETER_ROTATION_ANGLES);
+            PRIVATE_SETTINGS.add(VOLUME_LINK_NOTIFICATION);
         }
 
         /**
