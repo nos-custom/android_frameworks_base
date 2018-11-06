@@ -1211,7 +1211,6 @@ public class NotificationManagerService extends SystemService {
             if (uri == null || NOTIFICATION_LIGHT_PULSE_URI.equals(uri)) {
                 boolean pulseEnabled = Settings.System.getIntForUser(resolver,
                             Settings.System.NOTIFICATION_LIGHT_PULSE, 1, UserHandle.USER_CURRENT) != 0;
-                        != 0;
                 if (mNotificationPulseEnabled != pulseEnabled) {
                     mNotificationPulseEnabled = pulseEnabled;
                     updateNotificationPulse();
